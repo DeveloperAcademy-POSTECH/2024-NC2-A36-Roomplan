@@ -8,12 +8,8 @@
 import Foundation
 import RoomPlan
 
-struct Room {
-    let capturedRoom: CapturedRoom
-    var objects: [RoomObject]
-}
-
-struct RoomObject {
-    let object: CapturedRoom.Object
-    var memos: [String]
+struct RoomObject: Hashable, Identifiable {
+    let id = UUID()
+    var category: CapturedRoom.Object.Category
+    var memos: [String] = []
 }
