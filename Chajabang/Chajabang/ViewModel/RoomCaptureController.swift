@@ -63,12 +63,8 @@ class RoomCaptureController: RoomCaptureViewDelegate, RoomCaptureSessionDelegate
     
     func captureView(didPresent processedResult: CapturedRoom, error: Error?) {
         finalResult = processedResult
-//        objects = processedResult.objects
-//        addWallsToScene(walls: processedResult.walls)
-//        addObjectsToScene(objects: objects)
-        
-        guard let finalResult = finalResult else { return }
-        
+
+        guard let finalResult = finalResult else { return }        
         for object in finalResult.objects {
             roomObjects.append(RoomObject(object: object, category: object.category))
         }
