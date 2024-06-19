@@ -7,25 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B50C91402C22B6AF00B18185 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C913F2C22B6AF00B18185 /* OnboardingView.swift */; };
+		B50C91422C22B85800B18185 /* ScanningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C91412C22B85800B18185 /* ScanningView.swift */; };
+		B50C91442C22B8FC00B18185 /* ObjectsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C91432C22B8FC00B18185 /* ObjectsListView.swift */; };
+		B50C91462C22B98B00B18185 /* CaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C91452C22B98B00B18185 /* CaptureView.swift */; };
+		B50C91482C22B99A00B18185 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C91472C22B99A00B18185 /* SceneView.swift */; };
+		B50C914A2C22B9A700B18185 /* MemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C91492C22B9A700B18185 /* MemoView.swift */; };
+		B50C914E2C22CBEF00B18185 /* simd_float4x4+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C914D2C22CBEF00B18185 /* simd_float4x4+.swift */; };
 		B55492F52C1D6421000EE50D /* ChajabangApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55492F42C1D6421000EE50D /* ChajabangApp.swift */; };
-		B55492F72C1D6421000EE50D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55492F62C1D6421000EE50D /* ContentView.swift */; };
-		B55492F92C1D6421000EE50D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55492F82C1D6421000EE50D /* Item.swift */; };
 		B55492FB2C1D6423000EE50D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B55492FA2C1D6423000EE50D /* Assets.xcassets */; };
 		B55492FE2C1D6423000EE50D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B55492FD2C1D6423000EE50D /* Preview Assets.xcassets */; };
 		B554932D2C1F01EC000EE50D /* RoomCaptureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B554932C2C1F01EC000EE50D /* RoomCaptureController.swift */; };
-		B554932F2C1F0211000EE50D /* SwiftDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B554932E2C1F0211000EE50D /* SwiftDataManager.swift */; };
 		B55493312C1F0291000EE50D /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55493302C1F0291000EE50D /* Room.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B50C913F2C22B6AF00B18185 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		B50C91412C22B85800B18185 /* ScanningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanningView.swift; sourceTree = "<group>"; };
+		B50C91432C22B8FC00B18185 /* ObjectsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsListView.swift; sourceTree = "<group>"; };
+		B50C91452C22B98B00B18185 /* CaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureView.swift; sourceTree = "<group>"; };
+		B50C91472C22B99A00B18185 /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
+		B50C91492C22B9A700B18185 /* MemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoView.swift; sourceTree = "<group>"; };
+		B50C914D2C22CBEF00B18185 /* simd_float4x4+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "simd_float4x4+.swift"; sourceTree = "<group>"; };
 		B55492F12C1D6421000EE50D /* Chajabang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chajabang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B55492F42C1D6421000EE50D /* ChajabangApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChajabangApp.swift; sourceTree = "<group>"; };
-		B55492F62C1D6421000EE50D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		B55492F82C1D6421000EE50D /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		B55492FA2C1D6423000EE50D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B55492FD2C1D6423000EE50D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B554932C2C1F01EC000EE50D /* RoomCaptureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCaptureController.swift; sourceTree = "<group>"; };
-		B554932E2C1F0211000EE50D /* SwiftDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataManager.swift; sourceTree = "<group>"; };
 		B55493302C1F0291000EE50D /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -40,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B50C914F2C22CBF900B18185 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B50C914D2C22CBEF00B18185 /* simd_float4x4+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		B55492E82C1D6421000EE50D = {
 			isa = PBXGroup;
 			children = (
@@ -63,8 +79,7 @@
 				B55493272C1F012F000EE50D /* Model */,
 				B55493262C1F0118000EE50D /* Views */,
 				B55493282C1F015F000EE50D /* ViewModel */,
-				B55492F62C1D6421000EE50D /* ContentView.swift */,
-				B55492F82C1D6421000EE50D /* Item.swift */,
+				B50C914F2C22CBF900B18185 /* Extension */,
 				B55492FA2C1D6423000EE50D /* Assets.xcassets */,
 				B55492FC2C1D6423000EE50D /* Preview Content */,
 			);
@@ -100,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				B554932C2C1F01EC000EE50D /* RoomCaptureController.swift */,
-				B554932E2C1F0211000EE50D /* SwiftDataManager.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -108,6 +122,9 @@
 		B55493322C1F02EE000EE50D /* RoomCapture */ = {
 			isa = PBXGroup;
 			children = (
+				B50C913F2C22B6AF00B18185 /* OnboardingView.swift */,
+				B50C91452C22B98B00B18185 /* CaptureView.swift */,
+				B50C91412C22B85800B18185 /* ScanningView.swift */,
 			);
 			path = RoomCapture;
 			sourceTree = "<group>";
@@ -115,6 +132,9 @@
 		B55493332C1F0355000EE50D /* RoomMemo */ = {
 			isa = PBXGroup;
 			children = (
+				B50C91472C22B99A00B18185 /* SceneView.swift */,
+				B50C91432C22B8FC00B18185 /* ObjectsListView.swift */,
+				B50C91492C22B9A700B18185 /* MemoView.swift */,
 			);
 			path = RoomMemo;
 			sourceTree = "<group>";
@@ -189,12 +209,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B55492F72C1D6421000EE50D /* ContentView.swift in Sources */,
+				B50C914A2C22B9A700B18185 /* MemoView.swift in Sources */,
 				B55493312C1F0291000EE50D /* Room.swift in Sources */,
-				B55492F92C1D6421000EE50D /* Item.swift in Sources */,
-				B554932F2C1F0211000EE50D /* SwiftDataManager.swift in Sources */,
 				B55492F52C1D6421000EE50D /* ChajabangApp.swift in Sources */,
+				B50C91462C22B98B00B18185 /* CaptureView.swift in Sources */,
+				B50C91422C22B85800B18185 /* ScanningView.swift in Sources */,
+				B50C91482C22B99A00B18185 /* SceneView.swift in Sources */,
+				B50C91402C22B6AF00B18185 /* OnboardingView.swift in Sources */,
+				B50C91442C22B8FC00B18185 /* ObjectsListView.swift in Sources */,
 				B554932D2C1F01EC000EE50D /* RoomCaptureController.swift in Sources */,
+				B50C914E2C22CBEF00B18185 /* simd_float4x4+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +355,7 @@
 				DEVELOPMENT_TEAM = 2WSJ3W54FF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) uses camera for scanning room";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -360,6 +385,7 @@
 				DEVELOPMENT_TEAM = 2WSJ3W54FF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) uses camera for scanning room";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

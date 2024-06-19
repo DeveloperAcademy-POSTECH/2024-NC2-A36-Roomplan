@@ -26,4 +26,3 @@ extension CapturedRoom.Object: Hashable, Equatable {
 
 extension CapturedRoom.Object.Category: Hashable, Equatable {}
 
-

@@ -12,7 +12,6 @@ import Observation
 
 @Observable
 class RoomCaptureController: RoomCaptureViewDelegate, RoomCaptureSessionDelegate, ObservableObject {
-
     var roomCaptureView: RoomCaptureView
     var showExportButton = false
     var showShareSheet = false
@@ -25,8 +24,6 @@ class RoomCaptureController: RoomCaptureViewDelegate, RoomCaptureSessionDelegate
     var selectedNode: SCNNode?
     
     var roomObjects: [RoomObject] = []
-//    var objects: [CapturedRoom.Object] = []
-    
     
     init() {
         roomCaptureView = RoomCaptureView(frame: CGRect(x: 0, y: 0, width: 42, height: 42))
@@ -64,15 +61,14 @@ class RoomCaptureController: RoomCaptureViewDelegate, RoomCaptureSessionDelegate
     func captureView(didPresent processedResult: CapturedRoom, error: Error?) {
         finalResult = processedResult
 
-        guard let finalResult = finalResult else { return }        
+        guard let finalResult = finalResult else { return }  
+        
         for object in finalResult.objects {
             roomObjects.append(RoomObject(object: object, category: object.category))
         }
-        
         addWallsToScene(walls: finalResult.walls)
         addObjectsToScene(objects: finalResult.objects)
     }
-
     
     private func addWallsToScene(walls: [CapturedRoom.Surface]) {
         for wall in walls {
