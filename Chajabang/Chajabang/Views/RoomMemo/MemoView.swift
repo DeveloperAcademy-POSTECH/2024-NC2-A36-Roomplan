@@ -44,6 +44,7 @@ struct MemoView: View {
                 }
             }
         }
+        .padding()
     }
 }
 

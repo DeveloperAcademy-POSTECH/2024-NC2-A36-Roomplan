@@ -19,21 +19,25 @@ struct ObjectsListView: View {
                 .frame(height: UIScreen.main.bounds.height / 3)
             List {
                 ForEach(captureController.roomObjects, id: \.self) { object in
-                    Button(action: {
-                        captureController.selectObject(object.object)
-                        selectedRoomObject = object
-                    }) {
-                        Text("\(object.category)")
-                            .foregroundStyle(.indigo)
+                    HStack {
+                        Button(action: {
+                            captureController.selectObject(object.object)
+                            selectedRoomObject = object
+                        }) {
+                            Text("\(object.category)")
+                                .foregroundStyle(.indigo)
+                        }
                     }
                 }
                 .sheet(item: $selectedRoomObject) { _ in
                     MemoView(roomObject: $selectedRoomObject)
+                        .presentationDetents([.medium, .large])
                 }
             }
         }
     }
 }
+
 
 #Preview {
     ObjectsListView()

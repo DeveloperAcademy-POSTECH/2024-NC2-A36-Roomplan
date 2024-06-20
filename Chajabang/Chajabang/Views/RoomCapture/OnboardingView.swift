@@ -16,19 +16,21 @@ struct OnboardingView: View {
                 Image("findIt")
                     .imageScale(.large)
                     .foregroundColor(.accentColor)
-                Text("찾아방").font(.title)
-                Spacer().frame(height: 40)
-                Text("방을 스캔하고 물건을 메모하면 원하는 물건을 쉽게 찾을 수 있어요!")
+                Text("방을 스캔하고 물건을 메모하면\n원하는 물건을 쉽게 찾을 수 있어요!")
                     .multilineTextAlignment(.center)
-                Spacer().frame(height: 40)
-                NavigationLink(destination: ScanningView(), label: {Text("스캔하기").padding()})
+                    .font(.system(size: 18))
+                Spacer().frame(height: 120)
+                NavigationLink(destination: ScanningView(),
+                               label: {
+                    Text("스캔하기")
+                        .padding()
+                })
                     .buttonStyle(.borderedProminent)
                     .tint(.indigo)
                     .cornerRadius(40)
-                    .font(.title3)
+                    .font(.title.bold())
                     .foregroundStyle(Color.white)
             }
-            .background(.black)
         }
         .environmentObject(captureController)
     }

@@ -16,7 +16,7 @@ struct ScanningView: View {
     var body: some View {
         @Bindable var bindableController = captureController
         
-        VStack(alignment: .center) {
+        ZStack(alignment: .bottom) {
             CaptureView()
                 .navigationBarBackButtonHidden(true)
                 .navigationBarItems(leading: Button("취소") {
@@ -24,12 +24,13 @@ struct ScanningView: View {
                     presentationMode.wrappedValue.dismiss()
                 })
                 .foregroundColor(.indigo)
-            
                 .navigationBarItems(trailing: Button("완료") {
                     captureController.stopSession()
-                    withAnimation {
+//                    if !captureController.roomObjects.isEmpty {
                         showMakeMemoButton = true
-                    }
+//                    } else {
+//                        showMakeMemoButton = false
+//                    }
                 })
                 .foregroundColor(.indigo)
                 .onAppear() {
@@ -37,16 +38,19 @@ struct ScanningView: View {
                 }
             
             if showMakeMemoButton {
-                NavigationLink { // 버튼 대신
+                NavigationLink { 
                     ObjectsListView()
                 } label: {
                     Text("메모하기")
                 }
+                .buttonStyle(.borderedProminent)
+                .tint(.indigo)
+                .cornerRadius(40)
+                .font(.system(size: 20).weight(.heavy))
+                .foregroundStyle(Color.white)
+                .padding(.bottom, 40)
             }
         }
     }
 }
 
-#Preview {
-    ScanningView()
-}
