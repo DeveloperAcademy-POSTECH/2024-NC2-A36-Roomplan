@@ -22,7 +22,7 @@
 - UIKit이 아니라 SwiftUI를 활용하여 작성함 
 - RoomCaptureController를 사용해서 RoomPlan을 활용할 수 있도록 세팅
   
-```
+```Swift
 import Foundation
 import RoomPlan
 import Observation
